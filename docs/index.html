@@ -1,0 +1,901 @@
+<style>
+	.content {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 15px;
+		-webkit-box-shadow: 0px 10px 29px 4px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 10px 29px 4px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 10px 29px 4px rgba(0, 0, 0, 0.75);
+		background: #fff5e5;
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 30px;
+		padding: 20px;
+		font-weight: 500;
+		color: #fffcf7;
+	}
+
+	.img {
+		-webkit-box-shadow: 0px 10px 29px 4px rgba(82, 82, 82, 0.75);
+		-moz-box-shadow: 0px 10px 29px 4px rgba(82, 82, 82, 0.75);
+		box-shadow: 0px 10px 29px 4px rgba(82, 82, 82, 0.75);
+		margin-bottom: 20px;
+	}
+
+	.imgtitle {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.title {
+		padding: 20px;
+	}
+
+	#content-table {
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+
+	#content-table ul {
+		margin-bottom: 0;
+	}
+
+	#content-table li {
+		list-style-type: none;
+	}
+
+	#content-table a {
+		cursor: pointer;
+	}
+
+	pre {
+		background: #e7e7e7 !important;
+	}
+
+	.btn-group-sm>.btn,
+	.btn-sm {
+		padding: 3px 10px;
+		font-size: 12px;
+		line-height: 1.5;
+		border-radius: 3px;
+	}
+
+	.btn-transparent {
+		color: #333;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		color: #3d3d3d;
+	}
+
+	.btn:hover {
+		color: #3d3d3d;
+	}
+
+	.up {
+		float: right;
+	}
+</style>
+
+<html>
+
+<head>
+	<title>Hybrid Crm Tools</title>
+	<meta name="description" content="The all-in-one solution to accelerate and simplify your Dynamics 365 development" />
+	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="images/favicon.ico">
+
+	<meta property="og:url" content="https://akouddane.github.io/HybridCrmTools/">
+	<meta property="og:title" content="Hybrid Crm Tools on GitHub">
+	<meta property="og:description" content="The all-in-one solution to accelerate and simplify your Dynamics 365 development">
+	<meta property="og:image" content="images/EPogli.png">
+	<meta property="og:site_name" content="Dynamics CRM HybridCrmTools on GitHub">
+	<meta property="og:type" content="article">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="github.css">
+	<script src="jquery.js"></script>
+	<script src="highlight.pack.js"></script>
+
+	<script>
+		function scrollToElem(selector) {
+			$("html, body").animate({ scrollTop: $(selector).offset().top - 10 }, 500);
+		}
+		function github() {
+			window.location = "https://github.com/Akouddane/HybridCrmTools";
+		}
+	</script>
+</head>
+
+<body>
+
+
+
+
+	<div id="container">
+		<div style="float: right; margin: 40px;">
+			<a href="https://github.com/Akouddane/HybridCrmTools" class="btn btn-transparent btn-sm btn-flat"
+				type="button">
+				<img style="height: 26px; width: 26px" src="images/github.png">
+				<span
+					style="font-size: 18px; line-height: 30px; display: inline-block; vertical-align: bottom;">Download
+					on Github</span>
+			</a>
+		</div>
+
+
+		<div class="inner" style="width:80%">
+
+			<header>
+				<img src="images/header-logo.svg" style="height: 60px" />
+				<h2>The all-in-one solution to accelerate and simplify your Dynamics 365 development</h2>
+			</header>
+
+
+			<h1>Table of contents</h1>
+			<section id="content-table">
+				<ul>
+					<li>
+						<a onclick="scrollToElem('#how')">How HybridCrmTools works</a>
+					</li>
+					<li>
+						<a onclick="scrollToElem('#homePage')">Home Page</a>
+					</li>
+					<li>
+						<a onclick="scrollToElem('#step1')">Step 1 : Generate a project</a>
+					</li>
+					<li>
+						<a onclick="scrollToElem('#step2')">Step 2 : Configure your project</a>
+						<ul>
+							<li>
+								<a onclick="scrollToElem('#connection_step1')">Connection infos</a>
+							</li>
+							<li>
+								<a onclick="scrollToElem('#connection_step2')">Project infos</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a onclick="scrollToElem('#step3')">Step 3 : Happy coding</a>
+					</li>
+					<li>
+						<a onclick="scrollToElem('#projecttools')">Project tools</a>
+						<ul>
+							<li>
+								<a onclick="scrollToElem('#customapitool')">CustomAPI Register tool</a>
+							</li>
+							<li>
+								<a onclick="scrollToElem('#plugintool')">Plugin Register tool</a>
+							</li>
+							<li>
+								<a onclick="scrollToElem('#workflowtool')">Workflow Register tool</a>
+							</li>
+							<li>
+								<a onclick="scrollToElem('#webresourcetool')">WebResource Register tool</a>
+							</li>
+							<li>
+								<a onclick="scrollToElem('#jsmodelstool')">Javascript Models tool</a>
+							</li>
+							<li>
+								<a onclick="scrollToElem('#csmodelstool')">C# Models tool</a>
+							</li>
+							<li>
+								<a onclick="scrollToElem('#pcfbuildertool')">PCF Builder tool</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a onclick="scrollToElem('#downloads')">Downloads</a>
+					</li>
+				</ul>
+			</section>
+
+
+			<section id="main_content">
+				<div class="how">
+					<h1 id="how">How HybridCrmTools works
+						<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+							type="button">
+							<img style="height: 26px; width: 26px" src="images/top.png">
+						</button>
+					</h1>
+					<p>
+						Hybrid CRM Tools streamlines your Dynamics 365 development by automatically generating a
+						fully-structured Visual Studio project that includes Azure Functions, WebJobs, Plugins, Custom
+						APIs, Workflows, and WebResources.
+						<br>
+						Once your project is created, the toolset allows you to
+						easily publish custom APIs, plugins, and workflows, sync web resources, generate C# and
+						JavaScript
+						<br>
+						model definitions, and create, compile, and deploy PCFs.
+						This end-to-end solution empowers developers to manage all aspects of the project
+						in one place, significantly reducing manual setup and configuration efforts.
+					</p>
+					<img src="images/mainPage.png" class="img" style="width: 900px;">
+					</p>
+					</p>
+				</div>
+				<hr>
+
+				<div class="homePage">
+					<h1 id="homePage">Home Page
+						<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+							type="button">
+							<img style="height: 26px; width: 26px" src="images/top.png">
+						</button>
+					</h1>
+					<br>
+
+					<p>
+						<img src="images/mainPage.png" class="img" alt="" style="width: 900px;">
+					</p>
+
+					<p>
+						This interface shows all the provided tools splitted on 2 types :
+					<ul>
+						<li>
+							<span style="font-weight: bold">Projects Tools</span>
+							<br>
+							Tools that directly interacts with your project files
+						</li>
+						<li>
+							<span style="font-weight: bold">Other Tools</span>
+							<br>
+							Optional tools that can help developers/users
+						</li>
+					</ul>
+					</p>
+				</div>
+				<hr>
+
+				<div class="steps">
+					<div class="step1">
+						<h1 id="step1">Step 1 : Generate a project
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h1>
+						<br>
+						<p>
+							<img src="images/generateProject.png" style="width: 900px;" class="img" alt="">
+						</p>
+						<p>Choose your destination directory and your project name then click Create</p>
+						<p>
+							<img src="images/generateProject_parameters.png" style="width: 900px;" class="img" alt="">
+						</p>
+						<p>Your project is created and the directory is automatically opened</p>
+						<p>
+							<img src="images/explorer_struct.png" class="img" alt="">
+						</p>
+						<p>Open your project with Visual Studio then build solution</p>
+						<p>
+							<img src="images/visualstudio_struct.png" class="img" alt="">
+						</p>
+					</div>
+					<hr>
+					<div class="step2">
+						<h1 id="step2">Step 2 : Configure your project
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h1>
+						<br>
+						<p>Go to Home page and click on <span style="font-weight: bold;">Manage connections</span> then
+							click on <span style="font-weight: bold;">Add New</span></p>
+						<p>
+							<img src="images/manageConnection.png" class="img" alt="">
+						</p>
+
+						<h2 id="connection_step1">Connection infos
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>Fill the connection <span style="font-weight: bold;">group</span> (1), <span
+								style="font-weight: bold;">name</span> (2) and <span
+								style="font-weight: bold;">connection string</span> (3) then click on <span
+								style="font-weight: bold;">"Check"</span> button (4)</p>
+						<p>
+							<img src="images/manageConnection_parameters1.png" class="img" alt="">
+						</p>
+						<br>
+						<ul>
+							<li>
+								<span style="font-weight: bold">1. </span> Connection group (client name for example)
+							</li>
+							<li>
+								<span style="font-weight: bold">2. </span> Connection name (environment name for
+								example)
+							</li>
+							<li>
+								<span style="font-weight: bold">3. </span> Environment connection string
+							</li>
+							<li>
+								<span style="font-weight: bold">4. </span> Check the connection string to be able to
+								save your configuration
+							</li>
+							<li>
+								<span style="font-weight: bold">5. </span> Duplicate an existing connection
+							</li>
+							<li>
+								<span style="font-weight: bold">6. </span> Remove the current connection
+							</li>
+						</ul>
+
+
+						<h2 id="connection_step2">Project infos
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>Once your connection is checked, the check button is green, and a the <span
+								style="font-weight: bold;">"Advanced" Tab</span> appears</p>
+						<p>
+							<img src="images/manageConnection_parameters2.png" class="img" alt="">
+						</p>
+
+						<ul>
+							<li>
+								<div style="font-weight: bold">Custom APIs </div>
+								<div>This section corresponds to the configuration of the <span
+										style="font-weight: bold">"CustomApi Register" tool</span></div>
+								<div>Select the <span style="font-weight: bold">CustomApis project file (.csproj)</span>
+									and the solution that will be used</div>
+								<img src="images/customApis_config.png" style="width: 400px" class="img" alt="">
+							</li>
+							<li>
+								<div style="font-weight: bold">Plugins </div>
+								<div>This section corresponds to the configuration of the <span
+										style="font-weight: bold">"Plugin Register" tool</span></div>
+								<div>Select the <span style="font-weight: bold">Plugins project file (.csproj)</span>
+									and the solution that will be used</div>
+								<img src="images/plugins_config.png" style="width: 400px" class="img" alt="">
+							</li>
+							<li>
+								<div style="font-weight: bold">Workflows </div>
+								<div>This section corresponds to the configuration of the <span
+										style="font-weight: bold">"Workflow Register" tool</span></div>
+								<div>Select the <span style="font-weight: bold">Workflows project file (.csproj)</span>
+									and the solution that will be used</div>
+								<img src="images/workflows_config.png" style="width: 400px" class="img" alt="">
+							</li>
+							<li>
+								<div style="font-weight: bold">WebResources </div>
+								<div>This section corresponds to the configuration of the <span
+										style="font-weight: bold">"WebResources Register" tool</span></div>
+								<div>Select the <span style="font-weight: bold">WebResources root directory</span> and
+									the solution that will be used</div>
+								<img src="images/webResources_config.png" style="width: 400px" class="img" alt="">
+							</li>
+							<li>
+								<div style="font-weight: bold">Javascript definitions</div>
+								<div>This section corresponds to the configuration of the <span
+										style="font-weight: bold">"Javascript Models" tool</span></div>
+								<div>Select javascript file <span style="font-weight: bold">crmModels.js</span> located
+									in "shared" and the solution that will be used for retrieving definitions</div>
+								<img src="images/jsModels_config.png" style="width: 400px" class="img" alt="">
+							</li>
+							<li>
+								<div style="font-weight: bold">C# definitions</div>
+								<div>This section corresponds to the configuration of the <span
+										style="font-weight: bold">"C# Models" tool</span></div>
+								<div>Select C# file <span style="font-weight: bold">crmModels.cs</span> located in
+									"Hybrid Shared" and the solution that will be used for retrieving definitions</div>
+								<img src="images/csModels_config.png" style="width: 400px" class="img" alt="">
+							</li>
+							<li>
+								<div style="font-weight: bold">PCFs</div>
+								<div>This section corresponds to the configuration of the <span
+										style="font-weight: bold">"PCF Builder" tool</span></div>
+								<div>Select a the directory that contains the controls sources and this directory that
+									will contains generated solutions</div>
+								<img src="images/pcf_config.png" style="width: 400px" class="img" alt="">
+							</li>
+						</ul>
+
+						<p>Once the needed tools are configured, click on <span style="font-weight: bold;">Save</span>
+							button</p>
+					</div>
+					<hr>
+					<div class="step3">
+						<h1 id="step3">Step 3 : Happy coding
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h1>
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<hr>
+
+
+
+				<div class="projecttools">
+					<h1 id="projecttools">Project Tools
+						<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+							type="button">
+							<img style="height: 26px; width: 26px" src="images/top.png">
+						</button>
+					</h1>
+
+					<div class="customapitool">
+						<h2 id="customapitool">CustomAPI Register Tool
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>
+							Custom API Register tool allows to publish your code in one click into the configured
+							solution, by registring the assembly, plugin types, and the parameters (inputs and outputs)
+						<p>
+							<img src="images/customApis_interface.png" class="img" style="width: 900px;">
+							<img src="images/customApis_interface2.png" class="img" style="width: 900px;">
+						</p>
+
+						<ul>
+							<li>
+								Select a configured connection (see <a onclick="scrollToElem('#step2')">Step 2</a>) <div
+									class="ref">1</div>
+							</li>
+							<li>
+								<div class="ref">2</div> indicates the configured Dynamics solution
+							</li>
+							<li>
+								<div class="ref">3</div> indicates the configuration Dynamics environment
+							</li>
+							<li>
+								Click on "Register" <div class="ref">4</div>
+							</li>
+						</ul>
+
+						<p>
+						<div class="info"></div> Icons meaning :
+						<ul>
+							<li>
+								<img class="legend-img" src="images/add.png" /> The component will be added
+							</li>
+							<li>
+								<img class="legend-img" src="images/update.png" /> The component will be updated
+							</li>
+							<li>
+								<img class="legend-img" src="images/delete.png" /> The component will be deleted
+							</li>
+							<li>
+								<img class="legend-img" src="images/ok.png" /> The component is synchronized
+							</li>
+						</ul>
+						</p>
+						</p>
+
+					</div>
+					<hr>
+
+					<div class="plugintool">
+						<h2 id="plugintool">Plugin Register Tool
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>
+							Plugin Register tool allows to publish your code in one click into the configured solution,
+							by registring the assembly, plugin steps, and images
+						<p>
+							<img src="images/plugins_interface.png" class="img" style="width: 900px;">
+							<img src="images/plugins_interface2.png" class="img" style="width: 900px;">
+						</p>
+
+						<ul>
+							<li>
+								Select a configured connection (see <a onclick="scrollToElem('#step2')">Step 2</a>) <div
+									class="ref">1</div>
+							</li>
+							<li>
+								<div class="ref">2</div> indicates the configured Dynamics solution
+							</li>
+							<li>
+								<div class="ref">3</div> indicates the configuration Dynamics environment
+							</li>
+							<li>
+								Click on "Register" <div class="ref">4</div>
+							</li>
+						</ul>
+
+						<p>
+						<div class="info"></div> Icons meaning :
+						<ul>
+							<li>
+								<img class="legend-img" src="images/add.png" /> The component will be added
+							</li>
+							<li>
+								<img class="legend-img" src="images/update.png" /> The component will be updated
+							</li>
+							<li>
+								<img class="legend-img" src="images/delete.png" /> The component will be deleted
+							</li>
+							<li>
+								<img class="legend-img" src="images/ok.png" /> The component is synchronized
+							</li>
+						</ul>
+						</p>
+						</p>
+
+					</div>
+					<hr>
+
+					<div class="workflowtool">
+						<h2 id="workflowtool">Workflow Register Tool
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>
+							Workflow Register tool allows to publish your code in one click into the configured
+							solution, by registring the assembly and plugin types
+						<p>
+							<img src="images/workflows_interface.png" class="img" style="width: 900px;">
+							<img src="images/workflows_interface2.png" class="img" style="width: 900px;">
+						</p>
+
+						<ul>
+							<li>
+								Select a configured connection (see <a onclick="scrollToElem('#step2')">Step 2</a>) <div
+									class="ref">1</div>
+							</li>
+							<li>
+								<div class="ref">2</div> indicates the configured Dynamics solution
+							</li>
+							<li>
+								<div class="ref">3</div> indicates the configuration Dynamics environment
+							</li>
+							<li>
+								Click on "Register" <div class="ref">4</div>
+							</li>
+						</ul>
+
+						<p>
+						<div class="info"></div> Icons meaning :
+						<ul>
+							<li>
+								<img class="legend-img" src="images/add.png" /> The component will be added
+							</li>
+							<li>
+								<img class="legend-img" src="images/update.png" /> The component will be updated
+							</li>
+							<li>
+								<img class="legend-img" src="images/delete.png" /> The component will be deleted
+							</li>
+							<li>
+								<img class="legend-img" src="images/ok.png" /> The component is synchronized
+							</li>
+						</ul>
+						</p>
+						</p>
+
+					</div>
+					<hr>
+
+					<div class="webresourcetool">
+						<h2 id="webresourcetool">WebResource Register Tool
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>
+							WebResource Register tool allows to publish your code in one click into the configured
+							solution, by registring all the webresources
+						<p>
+							<img src="images/webResources_interface.png" class="img" style="width: 900px;">
+						</p>
+
+						<ul>
+							<li>
+								Select a configured connection (see <a onclick="scrollToElem('#step2')">Step 2</a>) <div
+									class="ref">1</div>
+							</li>
+							<li>
+								<div class="ref">2</div> indicates the configured Dynamics solution
+							</li>
+							<li>
+								<div class="ref">3</div> indicates the configuration Dynamics environment
+							</li>
+							<li>
+								<div class="ref">4</div> allows to filter the webresources to synchronize
+							</li>
+							<li>
+								<div class="ref">5</div> allows to filter the action to display (Webresources to create,
+								update, delete)
+							</li>
+							<li>
+								<div class="ref">6</div> When a webresource to delete is selected, this option allows to
+								choose to delete or just remove the webresource from the solution
+							</li>
+							<li>
+								Select the webResources to synchronize and click on "Register" <div class="ref">7</div>
+							</li>
+						</ul>
+
+						<p>
+						<div class="info"></div> Icons meaning :
+						<ul>
+							<li>
+								<img class="legend-img" src="images/add.png" /> The component will be added
+							</li>
+							<li>
+								<img class="legend-img" src="images/update.png" /> The component will be updated
+							</li>
+							<li>
+								<img class="legend-img" src="images/delete.png" /> The component will be deleted
+							</li>
+							<li>
+								<img class="legend-img" src="images/ok.png" /> The component is synchronized
+							</li>
+						</ul>
+						</p>
+						</p>
+
+					</div>
+					<hr>
+
+					<div class="jsmodelstool">
+						<h2 id="jsmodelstool">Javascript Models Tool
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>
+							Javascript Models tool allows to generate entities definitions for Javascript
+						<p>
+							<img src="images/jsmodels_interface.png" class="img" style="width: 900px;">
+						</p>
+
+						<ul>
+							<li>
+								Select a configured connection (see <a onclick="scrollToElem('#step2')">Step 2</a>) <div
+									class="ref">1</div>
+							</li>
+							<li>
+								<div class="ref">2</div> indicates the configured Dynamics solution that contains
+								entities to display
+							</li>
+							<li>
+								<div class="ref">3</div> indicates the configuration Dynamics environment
+							</li>
+							<li>
+								<div class="ref">4</div> Select an entity
+							</li>
+							<li>
+								<div class="ref">5</div> Select attributes
+							</li>
+							<li>
+								Click on "Generate definitions" <div class="ref">6</div>
+							</li>
+						</ul>
+						</p>
+						<p>
+							<img src="images/jsmodels_interface_result.png" class="img">
+						</p>
+
+					</div>
+					<hr>
+
+					<div class="csmodelstool">
+						<h2 id="csmodelstool">C# Models Tool
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>
+							Javascript Models tool allows to generate entities definitions for C#
+						<p>
+							<img src="images/csModels_interface.png" class="img" style="width: 900px;">
+						</p>
+
+						<ul>
+							<li>
+								Select a configured connection (see <a onclick="scrollToElem('#step2')">Step 2</a>) <div
+									class="ref">1</div>
+							</li>
+							<li>
+								<div class="ref">2</div> indicates the configured Dynamics solution that contains
+								entities to display
+							</li>
+							<li>
+								<div class="ref">3</div> indicates the configuration Dynamics environment
+							</li>
+							<li>
+								<div class="ref">4</div> Select an entity
+							</li>
+							<li>
+								<div class="ref">5</div> Select attributes
+							</li>
+							<li>
+								Select NN relationships <span style="font-weight: bold;">(Relationships Tab)</span>
+							</li>
+							<li>
+								Click on "Generate definitions" <div class="ref">6</div>
+							</li>
+						</ul>
+						</p>
+						<p>
+							<img src="images/csmodels_interface_result.png" class="img">
+						</p>
+
+					</div>
+					<hr>
+
+					<div class="pcfbuildertool">
+						<h2 id="pcfbuildertool">PCF Builder Tool
+							<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+								type="button">
+								<img style="height: 26px; width: 26px" src="images/top.png">
+							</button>
+						</h2>
+						<p>
+							PCF Builder tool allows to generate a PCF project, build it, generate a Dynamics solution,
+							and upload it
+						<p>
+							<img src="images/pcf_interface1.png" class="img" style="width: 900px;">
+						</p>
+
+						<ul>
+							<li>
+								Select a configured connection (see <a onclick="scrollToElem('#step2')">Step 2</a>) <div
+									class="ref">1</div>
+							</li>
+							<li>
+								<div class="ref">2</div> indicates the configured Dynamics solution that contains
+								entities to display
+							</li>
+							<li>
+								Select an available PCF control or create a new one <div class="ref">3</div> (ready only
+								when for an existing PCF)
+							</li>
+							<li>
+								Type the name of the PCF to create <div class="ref">4</div> (ready only when for an
+								existing PCF)
+							</li>
+							<li>
+								Type the namemespace of the PCF to create <div class="ref">5</div> (ready only when for
+								an existing PCF)
+							</li>
+							<li>
+								Select the template of the PCF to create (Field or DataSet) <div class="ref">6</div>
+								(ready only when for an existing PCF)
+							</li>
+							<li>
+								Type the desired version of the PCF (0.0.1 by default) <div class="ref">7</div>
+							</li>
+							<li>
+								Click on "Create Control" button <div class="ref2">1</div>
+							</li>
+						</ul>
+						<br>
+						<p>
+							<img src="images/pcf_interface2.png" class="img" style="width: 900px;">
+						</p>
+						<ul>
+							<li>
+								Type the publisher name of the PCF to create its solution <div class="ref">4</div>
+								(ready only when for an existing PCF solution)
+							</li>
+							<li>
+								Type the solution prefix of the PCF to create its solution <div class="ref">5</div>
+								(ready only when for an existing PCF solution)
+							</li>
+							<li>
+								Select the type of the solution PCF<div class="ref">6</div> (ready only when for non
+								existing PCF solution)
+							</li>
+							<li>
+								Generated Solution name <div class="ref">7</div>
+							</li>
+							<li>
+								Click on "Create Solution" button <div class="ref2">3</div>
+							</li>
+						</ul>
+
+						<br>
+
+						Interface Buttons
+						<p>
+							<img src="images/pcf_interface_buttons.png" class="img" style="width: 400px;">
+						</p>
+						<ul>
+							<li>
+								<div class="ref2">1</div> Create Control project
+							</li>
+							<li>
+								<div class="ref2">2</div> Open the control project in visual studio code
+							</li>
+							<li>
+								<div class="ref2">3</div> Create control solution
+							</li>
+							<li>
+								<div class="ref2">4</div> Increment project version and Build the project
+							</li>
+							<li>
+								<div class="ref2">5</div> Generate Dynamics Solution
+							</li>
+							<li>
+								<div class="ref2">6</div> Generate Dynamics Solution in production mode
+							</li>
+							<li>
+								<div class="ref2">7</div> Import the Dynamics Solution in selected environment
+							</li>
+						</ul>
+						</p>
+					</div>
+					<hr>
+				</div>
+
+
+
+
+				<h1 id="downloads">Downloads
+					<button onclick="scrollToElem('#container')" class="btn btn-transparent btn-sm btn-flat up"
+						type="button">
+						<img style="height: 26px; width: 26px" src="images/top.png">
+					</button>
+				</h1>
+				<p>
+				<h4 id="header-4">HybridCrmTools Setup</h4>
+				<p>
+					<a
+						href="https://github.com/Akouddane/HybridCrmTools/raw/master/dist/HybridCrmTools Setup 1.0.17.exe">HybridCrmTools
+						Setup 1.0.17.exe</a>
+				</p>
+				</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</section>
+
+			<script>
+				$(document).ready(function () {
+					$('pre code').each(function (i, block) {
+						hljs.highlightBlock(block);
+					});
+				});
+			</script>
+</body>
+
+</html>
