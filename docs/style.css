@@ -269,12 +269,12 @@ body {
 }
 
 a {
-    color: #137ab8;
+    color: #529bc7;
     cursor: pointer;
 }
 
 a:hover {
-    color: #0d5f91
+    color: #6997b3
 }
 
 header {
@@ -621,4 +621,30 @@ footer a:hover {
         width: 94%;
         margin: 0 auto
     }
+}
+
+.topButton{
+    filter: hue-rotate(176deg);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #3b7ab6;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+    background: #d4cdcd;
+    border: 0px none #ffffff;
+    border-radius: 50px;
 }
