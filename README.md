@@ -1,5 +1,6 @@
-![](https://akouddane.github.io/HybridCrmTools/images/header-logo.svg)
-# The all-in-one solution to accelerate and simplify your Dynamics 365 development
+<img src="https://akouddane.github.io/HybridCrmTools/images/header-logo.svg" height="80">
+
+# All-in-one solution to accelerate and simplify your Dynamics 365 development
 
 Documentation on : https://akouddane.github.io/HybridCrmTools/
 
