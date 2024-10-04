@@ -5,7 +5,6 @@
 Documentation on : https://akouddane.github.io/HybridCrmTools/
 
 Setup downloads on **[Release](https://github.com/Akouddane/HybridCrmTools/releases)** directory : 
-* **[version 1.0.17](https://github.com/Akouddane/HybridCrmTools/releases/download/Setup/HybridCrmTools.Setup.1.0.17.exe)**
 ---
 
 
