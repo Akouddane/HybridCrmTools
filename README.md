@@ -9,6 +9,5 @@ Setup downloads : **[Release](https://github.com/Akouddane/HybridCrmTools/releas
 ---
 
 
-![](https://akouddane.github.io/HybridCrmTools/images/generateProject.png)
 ![](https://akouddane.github.io/HybridCrmTools/images/manageConnection_parameters0.png)
 ![](https://akouddane.github.io/HybridCrmTools/images/manageConnection_parameters2.png)
